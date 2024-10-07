@@ -46,6 +46,15 @@ export default function Thumbnail({ foods }) {
             />
             <p>{food.name}</p>
           </Link>
+          <div className={classes.content}>
+            <div className={classes.name}>{food.name}</div>
+            <span 
+            className={`${classes.favorite} ${
+              food.favorite ? '' : classes.not}`}>
+              @@
+            </span>
+            
+          </div>
         </li>
       ))}
     </ul>
