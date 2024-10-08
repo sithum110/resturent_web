@@ -31,6 +31,7 @@
 import React from 'react';
 import classes from './Thumbnail.module.css';
 import { Link } from 'react-router-dom';
+import StarRating from '../../StarRating/StarRating';
 
 export default function Thumbnail({ foods }) {
   return (
@@ -51,9 +52,12 @@ export default function Thumbnail({ foods }) {
             <span 
             className={`${classes.favorite} ${
               food.favorite ? '' : classes.not}`}>
-              @@
+                 ♥ 
             </span>
-            
+            <div className={classes.stars}>
+              <StarRating stars={food.stars} />
+            </div>
+           
           </div>
         </li>
       ))}

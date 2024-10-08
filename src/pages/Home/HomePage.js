@@ -2,6 +2,7 @@ import React, { useEffect, useReducer } from 'react';
 import { getAll } from '../../service/foodService'; // Import service to get foods
 import Thumbnail from '../../components/Thumbnails/Thumbnail'; // Import Thumbnail component
 
+
 const initialState = { foods: [] }; // Initial state
 
 const reducer = (state, action) => {
