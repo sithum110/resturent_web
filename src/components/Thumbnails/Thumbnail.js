@@ -31,14 +31,15 @@
 import React from 'react';
 import classes from './Thumbnail.module.css';
 import { Link } from 'react-router-dom';
-import StarRating from '../../StarRating/StarRating';
+import StarRating from '../StarRating/StarRating';
+import Price from '../Price/Price';
 
 export default function Thumbnail({ foods }) {
   return (
     <ul className={classes.list}>
       {foods.map(food => (
         <li key={food.id}>
-          <Link to={`/food/${food.id}`}>
+          <Link to={`/foods/${food.id}`}>
             <img
               className={classes.image}
               // Fallback image if food.imageUrl is empty
@@ -57,6 +58,22 @@ export default function Thumbnail({ foods }) {
             <div className={classes.stars}>
               <StarRating stars={food.stars} />
             </div>
+           <div className={classes.prduct_item_footer}>
+           <div className={classes.origins}>
+              {
+                food.origins.map(origin =>(
+                  <span key={origin}>{origin}</span>
+                ))
+              }
+            </div>
+            <div className={classes.cook_time}>
+              <span>🕒</span>
+              {food.cookTime}
+            </div>
+           </div>
+           <div className={classes.price}>
+            <Price price={food.price} />
+           </div>
            
           </div>
         </li>
