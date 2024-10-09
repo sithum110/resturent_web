@@ -46,8 +46,8 @@ export default function Thumbnail({ foods }) {
               src={ `/foods/${food.imageUrl}` } 
               alt={food.name}
             />
-            <p>{food.name}</p>
-          </Link>
+            
+          
           <div className={classes.content}>
             <div className={classes.name}>{food.name}</div>
             <span 
@@ -76,6 +76,7 @@ export default function Thumbnail({ foods }) {
            </div>
            
           </div>
+          </Link>
         </li>
       ))}
     </ul>
