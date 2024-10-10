@@ -16,6 +16,11 @@
     flex-direction: column;
     overflow: hidden;
     color: #e72929;
+    overflow: hitted;
+    
+   
+    border-radius: 1rem;
+    overflow: hidden;
 }
 .image{
     object-fit: cover;
@@ -30,5 +35,44 @@
     height: 7rem;
 }
 .favorite{
-    position
+    position:absolute;
+    top: 0.5 rem;
+    right: 1rem;
+    font-size: 1.2rem;
 }
+.product_item_footer{
+    display: flex;
+    justify-content: space-between;
+    align-item: flex-start;}
+
+    .origins span{
+        border-radius: 2rem;
+        background-color: whitesmoke;
+        display: inline-block;
+        font-size: 0.8rem;
+        color: grey;
+        margin-right: 0.3rem;
+
+
+    }
+    .origins{
+        flex: 9;
+    }
+
+    .cook_time{
+        font-size: 0.9rem;
+        flex: 3;
+        text-align: right;
+
+    }
+    .price{
+        position: absolute;
+        bottom: 0;
+        left:0.9rem;
+        background-color: white;
+        padding: 0.3rem 100% 0 0;
+        color: #414141;
+        margin-top: 0.7rem;
+        font-size: 1.1rem;
+
+    }

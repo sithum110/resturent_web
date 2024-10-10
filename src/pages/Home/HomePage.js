@@ -1,6 +1,8 @@
 import React, { useEffect, useReducer } from 'react';
-import { getAll } from '../../service/foodService'; // Import service to get foods
+import { useParams } from 'react-router-dom';
+import { getAll,search } from '../../service/foodService'; // Import service to get foods
 import Thumbnail from '../../components/Thumbnails/Thumbnail'; // Import Thumbnail component
+
 
 
 const initialState = { foods: [] }; // Initial state
@@ -17,9 +19,12 @@ const reducer = (state, action) => {
 export default function HomePage() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { foods } = state;
+  const {searchTerm} = useParams();
 
   useEffect(() => {
-    getAll().then(foods => {
+    const loadedFoods = searchTerm ? search(searchTerm) : getAll();
+
+    loadedFoods.then(foods => {
       dispatch({ type: 'FOODS_LOADED', payload: foods });
     });
   }, []);
