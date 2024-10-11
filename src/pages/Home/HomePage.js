@@ -2,6 +2,7 @@ import React, { useEffect, useReducer } from 'react';
 import { useParams } from 'react-router-dom';
 import { getAll,search } from '../../service/foodService'; // Import service to get foods
 import Thumbnail from '../../components/Thumbnails/Thumbnail'; // Import Thumbnail component
+import Search from '../../components/Search/search'; // Import Search component
 
 
 
@@ -32,7 +33,9 @@ export default function HomePage() {
   // Pass foods to Thumbnail component
   return (
     <>
+      <Search />
       {foods.length > 0 ? (
+        
         <Thumbnail foods={foods} />  // Ensure foods is passed as a prop
       ) : (
         <div>No foods available.</div>
