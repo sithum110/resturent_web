@@ -3,6 +3,12 @@ import classes from './search.module.css'
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
+Search.defaultProps = {
+    searchRoute: '/search/',
+    defaultRoute: '/',
+    placeholder: 'Search Food Mine!',
+  };
+
 export default function search() {
     const [term,setTerm]=useState('');
     const navigate = useNavigate();
