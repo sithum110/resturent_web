@@ -1,30 +1,26 @@
 import React, { useState } from 'react'
 import classes from './search.module.css'
-import { useNavigate } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { useNavigate,useParams } from 'react-router-dom';
 
-Search.defaultProps = {
-    searchRoute: '/search/',
-    defaultRoute: '/',
-    placeholder: 'Search Food Mine!',
-  };
 
-export default function search() {
+
+
+export default function Search() {
     const [term,setTerm]=useState('');
     const navigate = useNavigate();
-    const {searchTerm} = useParams (();
-  return (
-    <div className={classes.container} style={{ margin }}>
-      <input
-        type="text"
-        placeholder={placeholder}
-        onChange={e => setTerm(e.target.value)}
-        onKeyUp={e => e.key === 'Enter' && search()}
-        value={term}
-      />
-      <button onClick={search}>Search</button>
-    </div>
-  );
-  
+    const {searchTerm} = useParams ();
+
+    const search = async () =>{
+        term ? navigate('/search/'+term) : navigate('/');
+
+    };
+  return <div className={classes.container}>
+    <input type='text' placeholder='Search food for Mine!'
+    onChange={e => setTerm(e.target.value)}
+    onKeyUp={e => e.key === 'Enter' && search()}
+    defaultValue={searchTerm}
+    />
+    <button onClick={search}>Search</button>
+  </div>;
 }
 

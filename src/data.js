@@ -12,11 +12,11 @@ export const sample_foods = [
     },
     {
         id:'2',
-        name:'Burger',
+        name:'meet',
         cookTime:'10-20',
         price:10,
         favorite:false,
-        origins:['American'],
+        origins:['American,japan'],
         status:4.5,
         imageUrl:'food-1.jpeg',
         tag:['FastFood','Pizza','lunch'],
@@ -45,7 +45,7 @@ export const sample_foods = [
     },
     {
         id:'5',
-        name:'Burger',
+        name:'meet',
         cookTime:'10-20',
         price:10,
         favorite:false,
@@ -54,4 +54,15 @@ export const sample_foods = [
         imageUrl:'food-1.jpeg',
         tag:['FastFood','Pizza','lunch'],
     },
-]
+];
+
+export const sample_tags =[
+    {name: 'All',count:6},
+    {name: 'FastFood',count:4},
+    {name: 'Pizza',count:2},
+    {name: 'Lunch',count:3},
+    {name: 'SlowFood',count:2},
+    {name: 'Hamburger',count:1},
+    {name: 'Fry',count:1},
+    {name: 'Soup',count:1},
+];
