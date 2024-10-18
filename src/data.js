@@ -8,7 +8,7 @@ export const sample_foods = [
         origins:['American'],
         status:4.5,
         imageUrl:'food-1.jpeg',
-        tag:['FastFood','Pizza','lunch'],
+        tags:['FastFood','Pizza','lunch'],
     },
     {
         id:'2',
@@ -19,7 +19,7 @@ export const sample_foods = [
         origins:['American,japan'],
         status:4.5,
         imageUrl:'food-1.jpeg',
-        tag:['FastFood','Pizza','lunch'],
+        tags:['FastFood','Pizza','lunch'],
     },
     {
         id:'3',
@@ -30,7 +30,7 @@ export const sample_foods = [
         origins:['American'],
         status:4.5,
         imageUrl:'food-1.jpeg',
-        tag:['FastFood','Pizza','lunch'],
+        tags:['FastFood','Pizza','lunch'],
     },
     {
         id:'4',
@@ -41,7 +41,7 @@ export const sample_foods = [
         origins:['American'],
         status:4.5,
         imageUrl:'food-1.jpeg',
-        tag:['FastFood','Pizza','lunch'],
+        tags:['FastFood','Pizza','lunch'],
     },
     {
         id:'5',
@@ -52,7 +52,7 @@ export const sample_foods = [
         origins:['American'],
         status:4.5,
         imageUrl:'food-1.jpeg',
-        tag:['FastFood','Pizza','lunch'],
+        tags:['FastFood','Pizza','lunch'],
     },
 ];
 
