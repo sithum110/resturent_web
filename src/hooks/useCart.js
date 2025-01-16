@@ -22,6 +22,10 @@ export default function CartProvider({ children }) { // Accept children as a pro
     setTotalCount(count);
   }, [cartItems]);
 
+  const removeFromCart = foodId =>{
+    const filteredCartItems = cartItems.filter(item => item.food.id !== foodId);
+  }
+
   return (
     <CartContext.Provider value={{ cart: { items: cartItems, totalPrice, totalCount } }}>
       {children} {/* Render the children */}
