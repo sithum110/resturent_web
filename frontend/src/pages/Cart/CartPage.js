@@ -1,9 +1,10 @@
 import React from 'react'
 import { useCart } from '../../hooks/useCart';
 import classes from './CartPage.module.css';
-import Title from '../../components/Title/Title';
+import Title from '../../components/Title/title';
 import { Link } from 'react-router-dom'
 import Price from '../../components/Price/Price';
+
 
 export default function CartPage() {
   const { cart,removeFromCart,changeQuantity } = useCart();
