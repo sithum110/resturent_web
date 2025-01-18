@@ -4,6 +4,7 @@ import { getAll,getAllTags,search } from '../../service/foodService'; // Import 
 import Thumbnail from '../../components/Thumbnails/Thumbnail'; // Import Thumbnail component
 import Search from '../../components/Search/search'; // Import Search component
 import Tags from '../../components/Tags/Tags'; // Import Tags component
+import NotFound from '../../components/notFound/NotFound'; // Import NotFound component
 
 
 
@@ -42,6 +43,7 @@ export default function HomePage() {
     <>
       <Search />
       <Tags tags={tags}/>
+      {foods.length === 0 && <NotFound/>}
 
         
         <Thumbnail foods={foods} />  
