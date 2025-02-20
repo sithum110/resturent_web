@@ -7,7 +7,7 @@ export const sample_foods = [
         favorite:false,
         origins:['American'],
         status:4.5,
-        imageUrl:'food-1.jpeg',
+        imageUrl:'food-1.jpg',
         tags:['FastFood','Pizza','lunch'],
     },
     {
@@ -18,7 +18,7 @@ export const sample_foods = [
         favorite:false,
         origins:['American,japan'],
         status:4.5,
-        imageUrl:'food-1.jpeg',
+        imageUrl:'food-2.jpg',
         tags:['FastFood','Pizza','lunch'],
     },
     {
@@ -29,7 +29,7 @@ export const sample_foods = [
         favorite:false,
         origins:['American'],
         status:4.5,
-        imageUrl:'food-1.jpeg',
+        imageUrl:'food-3.jpg',
         tags:['FastFood','Pizza','lunch'],
     },
     {
@@ -40,7 +40,7 @@ export const sample_foods = [
         favorite:false,
         origins:['American'],
         status:4.5,
-        imageUrl:'food-1.jpeg',
+        imageUrl:'food-4.jpg',
         tags:['FastFood','Pizza','lunch'],
     },
     {
@@ -51,7 +51,7 @@ export const sample_foods = [
         favorite:false,
         origins:['American'],
         status:4.5,
-        imageUrl:'food-1.jpeg',
+        imageUrl:'food-5.jpg',
         tags:['FastFood','Pizza','lunch'],
     },
 ];
@@ -66,3 +66,23 @@ export const sample_tags =[
     {name: 'Fry',count:1},
     {name: 'Soup',count:1},
 ];
+
+
+export const sample_users =[
+    {
+        id:1,
+        name:'John Doe',
+        email:'john@gmail.com',
+        password:'1234',
+        address:'Toronto On',
+        isAdmin: false,
+    },
+    {
+        id:2,
+        name:'Jahn Doe',
+        email:'jahn@gmail.com',
+        password:'1234',
+        address:'Shanghai',
+        isAdmin: true,
+    },
+]

@@ -30,7 +30,6 @@ export default function FoodPage() {
             <div className={classes.container}> 
                 <img
                 className={classes.image}
-                // Fallback image if food.imageUrl is empty
                 src={ `/foods/${food.imageUrl}` } 
                 alt={food.name}
               />

@@ -7,7 +7,6 @@ import Tags from '../../components/Tags/Tags'; // Import Tags component
 import NotFound from '../../components/notFound/NotFound'; // Import NotFound component
 
 
-
 const initialState = { foods: [],tags:[] }; // Initial state
 
 const reducer = (state, action) => {
